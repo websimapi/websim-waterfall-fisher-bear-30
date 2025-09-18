@@ -88,7 +88,7 @@ export function createScenery() {
 
     // Add a rock base under the river to connect to the waterfall cliff
     const riverBaseThickness = 1.0;
-    const riverBase = createVoxel(0, riverBedY - riverBaseThickness / 2, cliffEdgeZ - riverLength / 2 - 0.5, waterWidth, riverBaseThickness, riverLength, rockMat);
+    const riverBase = createVoxel(0, riverBedY - riverBaseThickness / 2 - 1.0, cliffEdgeZ - riverLength / 2 - 0.5, waterWidth, riverBaseThickness, riverLength, rockMat);
     group.add(riverBase);
 
     // Ground at the bottom of the waterfall
